@@ -1,0 +1,66 @@
+body {
+  background-color: #d6dde5;
+  margin: 20px;
+}
+
+.container {
+  width: 80%;
+  border-radius: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e5ded6;
+
+  position: relative;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.img-container {
+  margin-top: 5px;
+}
+
+.image {
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: #927940;
+}
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #ba4533;
+}
+
+.section {
+  font-family: "Dancing Script", cursive;
+  color: #927940;
+}
+
+.bio {
+  font-size: 1.5rem;
+  color: #ba4533;
+  margin: 15px;
+}
+
+li {
+  font-size: 1.5rem;
+  color: #ba4533;
+}
+
+i {
+    margin: 30px;
+}
+
+.fa-brands, .fa-solid {
+    color: #927940;
+}
