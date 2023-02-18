@@ -18,11 +18,11 @@ body {
   justify-content: flex-start;
 }
 
-.img-container {
+.personal-photo-container {
   margin-top: 5px;
 }
 
-.image {
+.personal-photo {
   height: 190px;
   width: 190px;
   border-radius: 50%;
@@ -46,7 +46,7 @@ body {
   color: #927940;
 }
 
-.bio {
+.desc {
   font-size: 1.5rem;
   color: #ba4533;
   margin: 15px;
@@ -63,4 +63,12 @@ i {
 
 .fa-brands, .fa-solid {
     color: #927940;
+}
+
+.comic-container {
+  margin: 10px;
+}
+
+.comic {
+  width: 100%;
 }
