@@ -20,13 +20,10 @@ async function addComic() {
 
   const publishDate = new Date(Date.UTC(data2.year, data2.month, data2.day));
 
-  const textElement = document.createElement("h2");
-
-  textElement.innerHTML = "Publish date: " + publishDate.toLocaleDateString("en-US");
-  textElement.className = "comic";
-
+  const dateText = document.createTextNode(publishDate);
+  
   const dateContainer = document.getElementsByClassName("date-container")[0];
-  dateContainer.appendChild(textElement);
+  dateContainer.appendChild(dateText);
 }
 
 addComic();
