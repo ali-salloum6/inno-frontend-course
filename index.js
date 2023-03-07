@@ -18,10 +18,16 @@ async function addComic() {
   const imageContainer = document.getElementsByClassName("comic-container")[0];
   imageContainer.appendChild(imgElement);
 
+  const titleText = document.createTextNode(data2.title);
+
+
+  const titleContainer = document.getElementsByClassName("title-container")[0];
+  titleContainer.appendChild(titleText);
+
   const publishDate = new Date(Date.UTC(data2.year, data2.month, data2.day));
 
   const dateText = document.createTextNode(publishDate);
-  
+
   const dateContainer = document.getElementsByClassName("date-container")[0];
   dateContainer.appendChild(dateText);
 }
