@@ -1,17 +1,18 @@
-type FetchedResponse = Response;
+<script lang="ts">
+	type FetchedResponse = Response;
 
 type ComicResponse = {
-  month: number;
+  month: string;
   num: number;
   link: string;
-  year: number;
+  year: string;
   news: string;
   safe_title: string;
   transcript: string;
   alt: string;
   img: string;
   title: string;
-  day: number;
+  day: string;
 };
 
 async function addComic() {
@@ -42,9 +43,9 @@ async function addComic() {
 
   console.log(comic_data.year, comic_data.month, comic_data.day);
   const publishDate = new Date(
-    comic_data.year,
-    comic_data.month + 1,
-    comic_data.day
+    parseInt(comic_data.year),
+    parseInt(comic_data.month) + 1,
+    parseInt(comic_data.day)
   );
   const dateText = document.createTextNode(publishDate.toLocaleString());
 
@@ -53,3 +54,11 @@ async function addComic() {
 }
 
 addComic();
+</script>
+
+<h1 class="desc">
+    Comic of the day:
+</h1>
+<div id="comic-container"></div>
+<div id="title-container"></div>
+<div id="date-container"></div>
